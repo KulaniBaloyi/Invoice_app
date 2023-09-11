@@ -18,6 +18,9 @@ const Header = () => {
       case path.includes('/settings'):
         setHeading('Settings');
         break;
+        case path.includes('/customers'):
+          setHeading('Settings');
+          break;
       
       // This case is executed if the current pathname does not include the '/settings' string.
       default:
@@ -32,7 +35,7 @@ const Header = () => {
 
 
   return (
-   <header className='border p-5 flex items-center justify-between'>
+   <header className=' p-5 flex items-center justify-between'>
     <h1 className='font-bold text-3xl'>{path}</h1>
     <div className='flex gap-1 items-center'>
    
