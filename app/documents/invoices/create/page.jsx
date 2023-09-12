@@ -37,10 +37,28 @@ const Page = ({params}) => {
                     </div>
                 </div>
                 <div className="col-span-2 p-1 flex flex-col gap-2">
-                    <div className="border p-2 border-cyan-500 rounded-md">Invoice-4</div>
-                    <div className="border p-2 border-cyan-500 rounded-md">Purchase Order(PO)#</div>
-                    <div className="border p-2 border-cyan-500 rounded-md">12 Sep 2023</div>
-                    <div className="border p-2 border-cyan-500 rounded-md">20 May 2024</div>
+                    <div className="border p-2 rounded-md">Invoice-4</div>
+                    <div className="border p-2  rounded-md">Purchase Order(PO)#</div>
+   {/**/}                 
+<div class="relative max-w-sm">
+  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+     <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+      </svg>
+  </div>
+  <input datepicker datepicker-autohide type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Start Date"/>
+</div>
+
+{/** */}
+<div class="relative max-w-sm">
+  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+     <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+      </svg>
+  </div>
+  <input datepicker datepicker-autohide type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Due Date"/>
+</div>
+{/**/}
                 </div>
             </div>
             
