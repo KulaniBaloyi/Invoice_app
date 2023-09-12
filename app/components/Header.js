@@ -9,34 +9,29 @@ const Header = () => {
   const [isOpen,setIsOpen] = useState(false)
   const path = usePathname()
 
- 
-  useEffect(()=>{
+  // if(path =="/customers"){
+  //   setHeading("Customers")
+  // }
+
+  useEffect(() => {
     setIsMounted(true)
-
-    switch (path) {
-      // This case checks whether the current pathname includes the '/settings' string.
-      case path.includes('/settings'):
-        setHeading('Settings');
-        break;
-        case path.includes('/customers'):
-          setHeading('Settings');
-          break;
-      
-      // This case is executed if the current pathname does not include the '/settings' string.
-      default:
-        // Do nothing.
-        break;
-    }
+    // This effect runs when the component is mounted.
  
-
-  },[path])
+  }, [path]);
 
   if(!isMounted)return
 
 
   return (
-   <header className=' p-5 flex items-center justify-between'>
-    <h1 className='font-bold text-3xl'>{path}</h1>
+   <header className=' p-5 flex items-baseline justify-between'>
+    <div className="flex flex-col gap-5">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="lg:hidden w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+    <h1 className='font-bold text-3xl capitalize'>{path.slice(path.lastIndexOf('/') + 1)}</h1>
+    </div>
+    
     <div className='flex gap-1 items-center'>
    
         <h2 className='font-semibold text-gray-800'>Kulani</h2>

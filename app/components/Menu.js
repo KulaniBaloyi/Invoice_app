@@ -21,7 +21,7 @@ const Menu = () => {
   
   
   return (
-    <aside className='border cols-span-1 flex flex-col gap-5 p-2 py-5 relative h-[100dvh] overflow-y-auto '>
+    <aside className='hidden border cols-span-1 lg:flex flex-col gap-5 p-2 py-5 relative h-[100dvh] overflow-y-auto '>
            
          
 

@@ -2,7 +2,13 @@ import Link from "next/link"
 const Invoices = () => {
   return (
     <div className='p-5 flex flex-col'> 
-    <div className='w-1/2 p-2 rounded-md bg-white'>Search...</div>
+    <div className='w-1/2 p-2 flex gap-5'>
+    <div className=' p-2 rounded-md bg-white '>Filter By Customer</div>
+    <div className=' p-2 rounded-md bg-white'>Inbox</div>
+
+
+    </div>
+   
     <section className='grid grid-cols-9 '>
         <h1 className='p-2 col-span-3'>Invoice</h1>
         <h1 className='p-2 col-span-2'>Status</h1>
