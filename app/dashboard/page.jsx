@@ -2,6 +2,7 @@
 "use client"
 import { useState,useEffect } from "react"
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -13,6 +14,7 @@ import {
   import { Line } from "react-chartjs-2";
 const Dashboard = () => {
     const [isMounted,setIsMounted]=useState(false)
+    const router = useRouter()
 
     useEffect(()=>{
         setIsMounted(true)
@@ -37,8 +39,9 @@ const Dashboard = () => {
                         <p className="border rounded-full px-6 py-2">More</p>
                     </div>
                     <div className="flex justify-between items-center gap-5">
+                     
                       
-                        <h1 className="w-full rounded-xl border p-8 flex items-center gap-5">
+                        <h1 onClick={()=>router.push("/documents/invoices/create")} className="cursor-pointer w-full rounded-xl border p-8 flex items-center gap-5">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 h-10 text-emerald-500">
   <path d="M1 4.25a3.733 3.733 0 012.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0016.75 2H3.25A2.25 2.25 0 001 4.25zM1 7.25a3.733 3.733 0 012.25-.75h13.5c.844 0 1.623.279 2.25.75A2.25 2.25 0 0016.75 5H3.25A2.25 2.25 0 001 7.25zM7 8a1 1 0 011 1 2 2 0 104 0 1 1 0 011-1h3.75A2.25 2.25 0 0119 10.25v5.5A2.25 2.25 0 0116.75 18H3.25A2.25 2.25 0 011 15.75v-5.5A2.25 2.25 0 013.25 8H7z" />
 </svg>
@@ -89,8 +92,27 @@ const Dashboard = () => {
      
     </div>
                 </div>
-                <div className="shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-2 p-16">Invoices overview for month goes here</div>
-              
+                {/** */}
+              <div className=" shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-2 p-5 overflow-x-auto">
+                  <section className="uppercase text-gray-500 border-b-2 pb-2 flex">
+                    <h1 className="shrink-0 w-1/2">Invoice</h1>
+                    <h1 className="shrink-0 w-1/2">Status</h1>
+                    <h1 className="shrink-0 w-1/2">Date</h1>
+                    <h1 className="shrink-0 w-1/2">Amount</h1>
+                  </section>
+                  <section className="uppercase text-gray-500 border-b-2 pb-2 flex">
+                  <h1 className="shrink-0 w-1/2">Status</h1>
+                    <h1 className="shrink-0 w-1/2">Status</h1>
+                    <h1 className="shrink-0 w-1/2">Date</h1>
+                    <h1 className="shrink-0 w-1/2">Amount</h1>
+                  </section>
+                 
+    
+     
+    
+
+                </div>
+              {/** */}
             </div>
             <div className="flex-[.3] flex flex-col gap-5">
                 <div className="shadow-sm shadow-neutral-200 bg-white border rounded-mdw-full flex flex-col gap-5 p-5">

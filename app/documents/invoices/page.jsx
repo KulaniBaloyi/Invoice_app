@@ -10,7 +10,7 @@ const Invoices = () => {
         <h1 className='p-2 col-span-2'>Amount</h1>
     </section>
     <Link href="/documents/invoices/invoice-1">
-    <section className='grid grid-cols-9 bg-white p-5 items-center'>
+    <section className='grid grid-cols-9 bg-white p-5 items-center border-b'>
         <h1 className='p-2 col-span-3 flex flex-col'>
             <p>Kulani</p>
             <p>#invoice-1</p>

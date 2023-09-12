@@ -41,7 +41,7 @@ const Header = () => {
    
         <h2 className='font-semibold text-gray-800'>Kulani</h2>
     
-    <div onClick={()=>setIsOpen(!isOpen)} className='cursor-pointer relative rounded-full aspect-square h-12 bg-gradient-to-r from via-orange-600 from-orange-600 to-sky-900'>
+    <div onClick={()=>setIsOpen(!isOpen)} className='cursor-pointer relative rounded-full aspect-square h-12 bg-gradient-to-r from via-orange-600 from-orange-600 to-[#fcd34d]'>
       {isOpen&&<ul className="absolute right-0 top-16 shadow-md shadow-gray-600 p-5 border rounded-md bg-white z-30 w-56">
         <li className="border-b p-2 flex items-center gap-5">
           <p className="bg-gray-500 aspect-square border h-8  rounded-md"></p>
