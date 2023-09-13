@@ -30,7 +30,7 @@ const Dashboard = () => {
     return (
       <div className="my-5">
         <h1 className="text-3xl">Hi <span className="font-semibold ">Kulani</span></h1>
-        <div className="flex my-5 gap-5 ">
+        <div className="flex flex-col lg:flex-row  my-5 gap-5 ">
            
             <div className=" flex-[.7] grid grid-cols-2 gap-5 ">
                 <div className="shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-2 p-5 flex flex-col gap-5">
