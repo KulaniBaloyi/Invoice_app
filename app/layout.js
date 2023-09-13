@@ -2,9 +2,6 @@
 import Header from './components/Header'
 import Menu from './components/Menu'
 import './globals.css'
-import Link from 'next/link'
-
-
 
 export const metadata = {
   title: 'invoice app',

@@ -38,7 +38,7 @@ const Dashboard = () => {
                         <h1 className="uppercase text-xl font-semibold">Create Document</h1>
                         <p className="border rounded-full px-6 py-2">More</p>
                     </div>
-                    <div className="flex justify-between items-center gap-5">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-5">
                      
                       
                         <h1 onClick={()=>router.push("/documents/invoices/create")} className="cursor-pointer w-full rounded-xl border p-8 flex items-center gap-5">
@@ -55,12 +55,12 @@ const Dashboard = () => {
                     </div>
 
                 </div>
-                <div className="shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-1 p-5 flex flex-col justify-between">
+                <div className="shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-2 md:col-span-1 p-5 flex flex-col justify-between">
                     <h1 className="text-gray-500  uppercase">Total Payments received</h1>
                     <p className="text-xl">R <span className="font-bold text-3xl">6,657</span>.00</p>
                     <p><span className="text-red-500">Overdue</span> <span className="font-semibold">0 invoices</span></p>
                 </div>
-                <div className="shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-1 gap-5 p-5 flex flex-col justify-between flex-wrap">
+                <div className="shadow-sm shadow-neutral-200 bg-white border rounded-md col-span-2 md:col-span-1 gap-5 p-5 flex flex-col justify-between flex-wrap">
                     <p className="text-gray-500  uppercase">SEPTEMBER INVOICE AMOUNT</p>
                     <p className="flex flex-col gap-1">
                     <p className="text-xl">R <span className="font-bold text-3xl">6,657</span>.00</p>

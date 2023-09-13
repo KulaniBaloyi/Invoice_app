@@ -23,7 +23,7 @@ const Header = () => {
 
 
   return (
-   <header className=' p-5 flex items-baseline justify-between'>
+   <header className=' flex items-baseline justify-between'>
     <div className="flex flex-col gap-5">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="lg:hidden w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
