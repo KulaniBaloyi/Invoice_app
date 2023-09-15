@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
           <main className='border col-span-4 p-10 h-[100dvh] overflow-y-auto bg-gray-100'>
           <Header/>
         {children}
-      
           </main>
         </div>
        
